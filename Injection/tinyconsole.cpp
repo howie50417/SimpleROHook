@@ -1,4 +1,4 @@
-HINSTANCE g_hTCInstance;
+﻿HINSTANCE g_hTCInstance;
 
 #define MAX_LOADSTRING 100
 #define IDC_RICHEDIT (101)

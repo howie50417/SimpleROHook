@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #define SHAREDMEMORY_OBJECTNAME _T("SimpleROHook1011")
 

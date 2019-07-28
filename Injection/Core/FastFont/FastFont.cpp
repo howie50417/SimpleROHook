@@ -1,4 +1,4 @@
-#include "FastFont.h"
+﻿#include "FastFont.h"
 
 CFastFont::CFastFont()
 {

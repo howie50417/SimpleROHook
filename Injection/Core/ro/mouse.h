@@ -1,4 +1,4 @@
-
+﻿
 enum EBtnState
 {
 	BTN_NONE,

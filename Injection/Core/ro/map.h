@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 struct CLightmap {
 	unsigned char brightObj[3];

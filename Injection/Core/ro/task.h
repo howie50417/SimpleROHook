@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 enum LMS_STATE {
 	LSM_WARNING = 0x0,

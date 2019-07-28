@@ -1,4 +1,4 @@
-class CPerformanceCounter
+﻿class CPerformanceCounter
 {
 private:
 	LONGLONG m_OldCounter;

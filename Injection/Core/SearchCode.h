@@ -1,4 +1,4 @@
-class CSearchCode
+﻿class CSearchCode
 {
 private:
 	typedef struct StFindMemInfo{

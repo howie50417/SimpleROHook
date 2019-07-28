@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 typedef long            s32;
 typedef unsigned long   u32;

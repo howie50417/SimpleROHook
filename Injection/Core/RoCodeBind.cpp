@@ -1,4 +1,4 @@
-#include "../tinyconsole.h"
+﻿#include "../tinyconsole.h"
 #include "RoCodeBind.h"
 
 HANDLE         g_hMapObject = 0;

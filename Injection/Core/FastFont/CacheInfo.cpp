@@ -1,4 +1,4 @@
-#include "CacheInfo.h"
+﻿#include "CacheInfo.h"
 
 CacheInfo::CacheInfo(int HashRootTables)
 {

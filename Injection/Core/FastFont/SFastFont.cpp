@@ -1,4 +1,4 @@
-#include "SFastFont.h"
+﻿#include "SFastFont.h"
 
 //#define defDebugLog
 
