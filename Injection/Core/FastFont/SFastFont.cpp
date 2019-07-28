@@ -420,7 +420,7 @@ CSFastFont::StSFontCacheInfo *CSFastFont::GetCacheData(int hashkey)
 	while(pCache)
 	{
 		if( pCache->OriginalKey == hashkey ){
-			// ŽQÆ‚³‚ê‚½ƒLƒƒƒbƒVƒ…‚ÍÅãˆÊ‚ÉŒJ‚èã‚ª‚é
+			// å‚ç…§ã•ã‚ŒãŸã‚­ãƒ£ãƒƒã‚·ãƒ¥ã¯æœ€ä¸Šä½ã«ç¹°ã‚Šä¸ŠãŒã‚‹
 			StSFontCacheInfo *pPrev = pCache->pPrev;
 			StSFontCacheInfo *pNext = pCache->pNext;
 			//
@@ -431,7 +431,7 @@ CSFastFont::StSFontCacheInfo *CSFastFont::GetCacheData(int hashkey)
 				m_pLastSFontChacheInfo = pPrev;
 			}
 			if( m_pLastSFontChacheInfoFirstUsed == pCache ){
-				// Å‚àŽg‚í‚ê‚Ä‚¢‚È‚¢ƒnƒbƒVƒ…ƒL[‚Ìˆ—
+				// æœ€ã‚‚ä½¿ã‚ã‚Œã¦ã„ãªã„ãƒãƒƒã‚·ãƒ¥ã‚­ãƒ¼ã®å‡¦ç†
 				if(&m_pSFontChacheInfo[0] == pPrev){
 					m_pLastSFontChacheInfoFirstUsed = pCache;
 				}else{
@@ -452,9 +452,9 @@ CSFastFont::StSFontCacheInfo *CSFastFont::GetCacheData(int hashkey)
 	// new data;
 	{
 //
-// –â‘è
-// ƒLƒƒƒbƒVƒ…I’[‚ðÄ—˜—p‚µ‚½ê‡
-// ƒI[ƒ_[ƒ|ƒCƒ“ƒ^‚ªƒŠƒ“ƒOó‘Ô‚É‚È‚Á‚Ä‚µ‚Ü‚¤
+// å•é¡Œ
+// ã‚­ãƒ£ãƒƒã‚·ãƒ¥çµ‚ç«¯ã‚’å†åˆ©ç”¨ã—ãŸå ´åˆ
+// ã‚ªãƒ¼ãƒ€ãƒ¼ãƒã‚¤ãƒ³ã‚¿ãŒãƒªãƒ³ã‚°çŠ¶æ…‹ã«ãªã£ã¦ã—ã¾ã†
 /*
 root
 DrawFont(x,y,str,color);A -> D
@@ -471,16 +471,16 @@ AGFEDCB
 */
 		pCache = m_pLastSFontChacheInfo;
 
-		// Å‚àŽg‚í‚ê‚Ä‚¢‚È‚¢ƒnƒbƒVƒ…ƒL[‚ÌŽæ“¾
-		// cA‚±‚¤‚È‚é‚Æ‚ÍŒÀ‚ç‚È‚¢
-		// ƒLƒƒƒbƒVƒ…‚ªƒqƒbƒg‚·‚é‚Æ‚±‚ê‚Í¬‚è—§‚½‚È‚¢
+		// æœ€ã‚‚ä½¿ã‚ã‚Œã¦ã„ãªã„ãƒãƒƒã‚·ãƒ¥ã‚­ãƒ¼ã®å–å¾—
+		// â€¦ã€ã“ã†ãªã‚‹ã¨ã¯é™ã‚‰ãªã„
+		// ã‚­ãƒ£ãƒƒã‚·ãƒ¥ãŒãƒ’ãƒƒãƒˆã™ã‚‹ã¨ã“ã‚Œã¯æˆã‚Šç«‹ãŸãªã„
 		if(	m_pLastSFontChacheInfoFirstUsed == m_pLastSFontChacheInfo ){
 			Flush();
 		}
 		if(!m_pLastSFontChacheInfoFirstUsed)
 			m_pLastSFontChacheInfoFirstUsed = m_pLastSFontChacheInfo;
 
-		m_pLastSFontChacheInfo = pCache->pPrev;// ŽÀŽ¿ÅI’[‚ÌƒLƒƒƒbƒVƒ…
+		m_pLastSFontChacheInfo = pCache->pPrev;// å®Ÿè³ªæœ€çµ‚ç«¯ã®ã‚­ãƒ£ãƒƒã‚·ãƒ¥
 		
 		StSFontCacheInfo *pPrev = pCache->pPrev;
 		StSFontCacheInfo *pNext = pCache->pNext;

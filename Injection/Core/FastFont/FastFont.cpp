@@ -278,14 +278,14 @@ void CFastFont::test(int mode)
 	GLYPHMETRICS GM;
 	int code;
 	DWORD imagesize;
-	code = (int)_T("‚ ");
+	code = (int)_T("ã‚");
 	switch(mode){
 	case 0:
 		imagesize = GetGlyphOutline(m_hDC, code, m_OutLineFormat, &GM, 0, NULL, &Mat);
 		break;
 	case 1:
 		{
-			// ƒoƒbƒtƒ@ƒTƒCƒY‚ª‘å‚«‚¢‚Ù‚ÇŠÔ‚ªŠ|‚©‚é
+			// ãƒãƒƒãƒ•ã‚¡ã‚µã‚¤ã‚ºãŒå¤§ãã„ã»ã©æ™‚é–“ãŒæ›ã‹ã‚‹
 			// 
 			BYTE g_data[64*64];
 			GetGlyphOutline(m_hDC, code, m_OutLineFormat,&GM, 64*64,g_data, &Mat);
@@ -293,7 +293,7 @@ void CFastFont::test(int mode)
 		break;
 	case 2:
 		{
-			// NULL‚É‚æ‚éƒoƒbƒtƒ@ƒTƒCƒYæ“¾‚ÍˆÈŠO‚É•‰‰×‚ª‚‚¢
+			// NULLã«ã‚ˆã‚‹ãƒãƒƒãƒ•ã‚¡ã‚µã‚¤ã‚ºå–å¾—ã¯ä»¥å¤–ã«è² è·ãŒé«˜ã„
 			BYTE *pdata;
 			imagesize = GetGlyphOutline(m_hDC, code, m_OutLineFormat, &GM, 0, NULL, &Mat);
 			pdata = new BYTE[imagesize];
@@ -303,8 +303,8 @@ void CFastFont::test(int mode)
 		break;
 	case 3:
 		{
-			// ƒtƒHƒ“ƒgƒTƒCƒY‚ª‚ ‚é’ö“x”cˆ¬‚Å‚«‚é‚È‚ç‚Î
-			// æ“¾ƒoƒbƒtƒ@‚ğ‘O‚à‚Á‚ÄŠm•ÛAæ“¾Œãƒoƒbƒtƒ@‚ğì¬‚µ‚ÄƒRƒs[‚ªÅ‘¬
+			// ãƒ•ã‚©ãƒ³ãƒˆã‚µã‚¤ã‚ºãŒã‚ã‚‹ç¨‹åº¦æŠŠæ¡ã§ãã‚‹ãªã‚‰ã°
+			// å–å¾—ãƒãƒƒãƒ•ã‚¡ã‚’å‰ã‚‚ã£ã¦ç¢ºä¿ã€å–å¾—å¾Œãƒãƒƒãƒ•ã‚¡ã‚’ä½œæˆã—ã¦ã‚³ãƒ”ãƒ¼ãŒæœ€é€Ÿ
 			BYTE g_data[64*64];
 			BYTE *pdata;
 			imagesize = GetGlyphOutline(m_hDC, code, m_OutLineFormat,&GM, 64*64,g_data, &Mat);

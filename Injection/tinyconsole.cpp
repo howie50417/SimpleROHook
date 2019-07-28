@@ -136,7 +136,7 @@ LRESULT CALLBACK TinyConsoleWinProc( HWND hWnd, UINT message, WPARAM wParam, LPA
 				CFM_CHARSET | CFM_FACE | CFM_COLOR | CFM_SIZE;
 
 			cfm.yHeight = 14 * 20;
-            cfm.bCharSet = SHIFTJIS_CHARSET;  //ÅiShiftJISÅj
+            cfm.bCharSet = SHIFTJIS_CHARSET;  //Óª°ShiftJISÓª¢
 			lstrcpy(cfm.szFaceName, _T("FixedSys"));//FixedSys System Terminal
 
 			cfm.crTextColor = RGB(0, 0, 0);

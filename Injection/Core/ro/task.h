@@ -37,7 +37,7 @@ public:
 	unsigned long m_mouseAnimStartTick;
 	int m_isMouseLockOn;
 	int m_screenShotNow;
-	struct vector2d m_mouseSnapDiff; // ‚±‚±‚Ü‚Åˆê 0xd0 or 0xb4
+	struct vector2d m_mouseSnapDiff; // ã“ã“ã¾ã§ä¸€ç·’ 0xd0 or 0xb4
 #ifdef CMODE_PADDING_24
 	//
 	// Padding used to be 28. At the latest, CGameMode.m_rswName

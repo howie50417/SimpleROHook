@@ -13,14 +13,14 @@
 class CSFastFont
 {
 private:
-	/// ’¸“_ŠÖŒW ///
-//	#define SFF_FVF_CUSTOM ( D3DFVF_XYZRHW | D3DFVF_DIFFUSE | D3DFVF_TEX1 ) // À•W•ÏŠ·Ï‚İ’¸“_
+	/// é ‚ç‚¹é–¢ä¿‚ ///
+//	#define SFF_FVF_CUSTOM ( D3DFVF_XYZRHW | D3DFVF_DIFFUSE | D3DFVF_TEX1 ) // åº§æ¨™å¤‰æ›æ¸ˆã¿é ‚ç‚¹
 //
 //	struct SFF_CUSTOMVERTEX{
-//	   float x,y,z; // ’¸“_À•W 
-//	   float rhw; // œZ”
-//	   DWORD dwColor; // ’¸“_‚ÌF
-//	   float u, v; //@ƒeƒNƒXƒ`ƒƒÀ•W 
+//	   float x,y,z; // é ‚ç‚¹åº§æ¨™ 
+//	   float rhw; // é™¤ç®—æ•°
+//	   DWORD dwColor; // é ‚ç‚¹ã®è‰²
+//	   float u, v; //ã€€ãƒ†ã‚¯ã‚¹ãƒãƒ£åº§æ¨™ 
 //	};
 
 	typedef struct StSFontCacheInfo{
